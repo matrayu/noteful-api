@@ -1,7 +1,7 @@
 {
-  "name": "express-boilerplate",
+  "name": "noteful-api",
   "version": "0.0.1",
-  "description": "",
+  "description": "Noteful server project for TF",
   "main": "index.js",
   "scripts": {
     "test": "mocha --require test/setup.js",
