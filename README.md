@@ -32,7 +32,7 @@ Seed Folders in the db `npm run seed-folders`
 
 Seed Notes in the db `npm run seed-notes`
 
-Migragrate data to standard database `npm run migrate`
+Migrate data to standard database `npm run migrate`
 
 ## Deploying
 
