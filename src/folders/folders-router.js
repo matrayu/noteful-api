@@ -28,12 +28,12 @@ foldersRouter
         const { foldername } = req.body;
         const newFolder = { foldername };
 
-        if (newFolder == null) {
-            logger.error(`Folder name value is empty and be provided`)
+        if (!foldername) {
+            logger.error(`Missing foldername value must be provided`)
             return res
                 .status(400)
                 .send({ 
-                    error: `Folder name value is empty and be provided`
+                    error: `Missing foldername value must be provided`
                 })
         }
 
@@ -59,7 +59,7 @@ foldersRouter
                 if(!folder) {
                     logger.error(`Folder with id ${folder_id} not found`)
                     return res
-                        .status(400)
+                        .status(404)
                         .json({ 
                             error: `Folder with id ${folder_id} not found`
                         })
