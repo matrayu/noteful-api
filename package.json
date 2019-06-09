@@ -4,6 +4,8 @@
   "description": "Noteful server project for TF",
   "main": "index.js",
   "scripts": {
+    "seed-folders": "psql -U matrayu -d noteful -f ./seeds/seed.noteful_folders.sql",
+    "seed-notes": "psql -U matrayu -d noteful -f ./seeds/seed.noteful_notes.sql",
     "test": "mocha --require test/setup.js",
     "dev": "nodemon src/server.js",
     "migrate": "postgrator --config postgrator-config.js",
