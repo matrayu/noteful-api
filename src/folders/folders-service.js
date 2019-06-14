@@ -16,8 +16,6 @@ const FoldersService = {
             });
     },
     getById(knex, id) {
-        /* return Promise.resolve({}) */
-        
         //select all folders where the id is the id passed in retriving the first record
         return knex.from('noteful_folders')
             .select('*')
